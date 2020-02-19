@@ -27,14 +27,12 @@ public class BallControl : MonoBehaviour
         rb.AddForce(movement * speed);
     }
 
-    //void OnTriggerEnter(Collider other)
-    //{
-        //if (other.gameObject.CompareTag("Pick Up"))
-       // {
-       //     other.gameObject.SetActive(false);
-       //    count = count + 1;
-        //    SetCountText();
-        //}
-   // }
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Pick Up"))
+        {
+            other.gameObject.SetActive(false);
+        }
+    }
 
 }
