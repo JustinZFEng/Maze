@@ -10,9 +10,11 @@ public enum GameMode
 }
 public class Maze : MonoBehaviour
 {
+    private int count;
     static private Maze S; //	a	private	Singleton
     [Header("Set in	Inspector")]
     public Text uitLevel;
+    public Text winText;
     //ublic Text uitShots;
     public Vector3 mazePos; //	The	place	to	put	castles
     public GameObject[] mazes;          //	An	array	of	the	castles
@@ -29,6 +31,7 @@ public class Maze : MonoBehaviour
         level = 0;
         levelMax = mazes.Length;
         StartLevel();
+        winText.text = "";
     }
     void StartLevel()
     {
@@ -55,6 +58,16 @@ public class Maze : MonoBehaviour
         {
             mode = GameMode.levelEnd;
             NextLevel();
+            count++;
+            if (count == 4) 
+            {
+                winText.text = "You Win! Collect the cube at the bottom to restart!";
+            }
+            if (count == 5)
+            {
+                winText.text = "";
+                count = -1;
+            }
             //Invoke("NextLevel", 2f);
         }
         
