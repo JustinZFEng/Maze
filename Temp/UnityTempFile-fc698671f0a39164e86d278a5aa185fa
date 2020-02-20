@@ -285,4 +285,7 @@
 /define:CSHARP_7_OR_LATER
 /define:CSHARP_7_3_OR_NEWER
 Assets\Scripts\BallControl.cs
+Assets\Scripts\Goal.cs
+Assets\Scripts\Maze.cs
+Assets\Scripts\Moving.cs
 Assets\Scripts\Rotate.cs
