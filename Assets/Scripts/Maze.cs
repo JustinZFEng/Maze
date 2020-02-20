@@ -15,6 +15,7 @@ public class Maze : MonoBehaviour
     [Header("Set in	Inspector")]
     public Text uitLevel;
     public Text winText;
+    public Text exText;
     //ublic Text uitShots;
     public Vector3 mazePos; //	The	place	to	put	castles
     public GameObject[] mazes;          //	An	array	of	the	castles
@@ -32,6 +33,7 @@ public class Maze : MonoBehaviour
         levelMax = mazes.Length;
         StartLevel();
         winText.text = "";
+        exText.text = "";
     }
     void StartLevel()
     {
@@ -48,7 +50,7 @@ public class Maze : MonoBehaviour
 
     void UpdateGUI()
     {
-        uitLevel.text = "Level:	" + (level + 1) + " of " + levelMax;
+        uitLevel.text = "Level: " + (level + 1) + " of " + levelMax;
     }
 
     void Update()
@@ -61,12 +63,14 @@ public class Maze : MonoBehaviour
             count++;
             if (count == 4) 
             {
-                winText.text = "You Win! Collect the cube at the bottom to restart!";
+                winText.text = "You Win!";
+                exText.text = " Collect the cube at the bottom to restart!";
             }
             if (count == 5)
             {
                 winText.text = "";
-                count = -1;
+                exText.text = "";
+                count = 0;
             }
             //Invoke("NextLevel", 2f);
         }
