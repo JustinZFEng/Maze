@@ -685,7 +685,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uitLevel: {fileID: 2078838932}
-  uitShots: {fileID: 0}
   mazePos: {x: 0, y: 0, z: 0}
   mazes:
   - {fileID: 4212491675812165942, guid: 2d629bfd1ebdeb442aa1bc21f4e81d1a, type: 3}
@@ -993,7 +992,7 @@ GameObject:
   - component: {fileID: 1595388292}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1099,7 +1098,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5264dffab5224d43b2ac69b422c90a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  speed: 20
 --- !u!1 &2078838930
 GameObject:
   m_ObjectHideFlags: 0

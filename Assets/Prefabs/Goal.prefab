@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 4838064708833107155}
   - component: {fileID: 4838064708833107164}
   - component: {fileID: 4838064708833107167}
+  - component: {fileID: 5709915545894162057}
   m_Layer: 0
   m_Name: Goal
   m_TagString: Pick Up
@@ -120,5 +121,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bb5eff956ae034b4c80c59a023d15f14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5709915545894162057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4838064708833107154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fba723d8e01e4a84cb8ea5a999324a59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

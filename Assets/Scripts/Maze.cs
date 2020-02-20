@@ -54,8 +54,10 @@ public class Maze : MonoBehaviour
         if ((mode == GameMode.playing) && Goal.goalMet)
         {
             mode = GameMode.levelEnd;
-            Invoke("NextLevel", 2f);
+            NextLevel();
+            //Invoke("NextLevel", 2f);
         }
+        
     }
     void NextLevel()
     {
