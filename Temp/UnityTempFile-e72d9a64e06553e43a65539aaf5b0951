@@ -76,6 +76,9 @@
 /reference:Library/ScriptAssemblies/Unity.Rider.Editor.dll
 /reference:Library/ScriptAssemblies/Unity.TextMeshPro.dll
 /reference:Library/ScriptAssemblies/UnityEditor.UI.dll
+/reference:"C:/Program Files/Unity/Editor/Data/PlaybackEngines/AppleTVSupport/UnityEditor.iOS.Extensions.Xcode.dll"
+/reference:"C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll"
+/reference:"C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll"
 /reference:"C:/Program Files/Unity/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll"
 /reference:"C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/Microsoft.Win32.Primitives.dll"
 /reference:"C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.AppContext.dll"
@@ -274,6 +277,7 @@
 /define:ENABLE_UNITY_COLLECTIONS_CHECKS
 /define:ENABLE_BURST_AOT
 /define:UNITY_TEAM_LICENSE
+/define:UNITY_PRO_LICENSE
 /define:ENABLE_CUSTOM_RENDER_TEXTURE
 /define:ENABLE_DIRECTOR
 /define:ENABLE_LOCALIZATION
